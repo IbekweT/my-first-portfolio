@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: auto;
+   
+    
+}
+nav{
+    height: 80px;
+   background: white;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px 0px 100px;
+    color: black;
+}
+nav .logo{
+   
+    font-size: 33px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    font-size:18px ;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    
+}
+nav .menu-btn i{
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color: white;
+    background: lightblue;
+    border-radius: 7px;
+}
+#click{
+    display: none;
+    align-items: center;
+}
+@media screen and (max-width:380px){
+
+    .services img{
+        width: 230px;
+}
+.button-c{
+    display: none;
+}
+}
+@media screen and (max-width:910Px){
+    
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\x";
+    }
+    nav .logo{
+       left: 1px;
+    position: relative;
+    bottom: 0%;
+    }
+    nav{
+       width: 100%;
+        position: fixed;
+        top:0;
+       
+    }
+    .button{
+        margin: 0 auto;
+    }
+    nav ul{
+        position: fixed;
+        top:80px;
+        left: -100%;
+        background:white;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li{
+        margin: 40px 0;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    nav ul li a:hover,
+nav ul li a.active{
+    color: white;
+    background:lightblue;
+    border-radius: 7px;
+}
+.info{
+    width: 100%;
+    
+}
+.services{
+    width: 100%;
+}
+.about{
+    flex-direction: column;
+    width: 100%; 
+    height: 90vh;
+ }
+ .container{
+     width: 100%;
+ }
+ .row{
+     flex-direction: column;
+ }
+ .box{
+    width: 100%;
+    margin-right: 20px;
+ }
+ 
+}
+@media screen and (min-width:1000px) {
+  .about{
+      margin-bottom: 0; 
+      line-height: 1m;  
+      height:50vh;
+  }
+  .info{
+    
+  }
+  
+  
+  h3 .serve{
+     padding-top: 0;
+  }
+}
+.info{
+    color: white;
+    background-color: navy;
+    height:80vh;
+   text-align: center;
+   margin-bottom: 30px;
+}
+span{
+    color: rgb(247, 128, 9);
+}
+.info h3{
+    padding: 100px 0px 15px 0px;
+    font-weight: bold;
+    font-size: 4.5vmin;
+}
+.info h4{
+   font-size: 4.5vmin;
+    padding:10px 0px 15px 0px;
+    font-weight: bold;
+     
+}
+.info p{
+    margin: 10px;
+    padding: 10px 20px;
+    line-height: 1cm;
+    letter-spacing: 1px;
+   font-size: 4.5vmin;
+}
+.button{
+    border-radius: 15px 0 15px 0;
+    background-color:white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+   margin: 45px 0 20px;
+    cursor: pointer; 
+}
+.button span{
+    cursor: pointer;
+    display: inline-block;
+    position:relative;
+    transition: 1s;
+}
+.button span:after{
+    content: ' ';
+    position: absolute;
+    opacity: 0;
+    top:0;
+    right:-20px;
+    transition: 1s;
+}
+.button:hover span{
+    padding-right:25px;
+}
+.button:hover span:after{
+    opacity:1;
+    right:0;
+}
+
+.button:hover{
+    transition-duration: 2s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    opacity:0.6;
+    cursor: pointer;
+}
+.button:active{
+    background-color: #091609;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.me h3{
+    text-align: center;
+    padding: 100px 0 0;
+    font-size: 4.5vmin;
+    color: navy;
+}
+hr{
+    width: 130px;
+    margin: auto;
+ 
+  margin-bottom: 30PX;
+
+}
+.inn{
+    margin: auto;
+}
+.about{
+    height: 80vh;
+    
+   
+   display: flex;
+   justify-content: center;
+}
+.about-info p{
+    padding: 30px;
+    font-size: 4.5vmin;
+}
+.about-img{
+    padding: 20px;
+}
+
+.services{
+    text-align: center;
+    color: white;
+    height: 50vh;
+}
+  .serve{
+   margin-top: 15px;
+    padding: 75px 0 0 0;
+    font-size: 4.5vmin;
+    color: navy;
+}
+h3{
+    font-size:4vmin;
+}
+.row{
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: navy;
+    padding: 30px;
+    
+
+}
+.box{
+   border: 1px ridge;
+   border-radius: 15px 0 15px 0;
+   padding: 20px;
+   background-color: white;
+   color: navy;
+   margin:20px 30px 20px 20px;
+}
+.box p{
+    padding: 10px 0 0;
+    line-height: 0.6cm;
+    letter-spacing: 1px;
+    font-size: 4.5vmin;
+}
+.box img{
+   background-size: cover;
+   border: black;
+   border-radius: 12px 0 12px 0;
+}
+.ontacts{
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: red;
+}
